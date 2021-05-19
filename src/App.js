@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Error from "./pages/Error";
 import Rooms from "./pages/Rooms";
 import SingleRoom from "./pages/SingleRoom";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (

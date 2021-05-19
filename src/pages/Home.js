@@ -1,8 +1,8 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Banner from "../components/Banner";
+import Hero from "../components/Hero/Hero";
+import Banner from "../components/Banner/Banner";
 import { Link } from "react-router-dom";
-import Services from "../components/Services";
+import Services from "../components/Services/Services";
 import FeaturedRooms from "../components/FeaturedRooms";
 
 export default function Home() {
@@ -10,11 +10,11 @@ export default function Home() {
     <>
       <Hero>
         <Banner
-          title="luxurious rooms"
-          subtitle="deluxe rooms starting at $299"
+          title="egzotyczne wakacje"
+          subtitle="egzotyczne wakacje od 999 zł"
         >
           <Link to="/rooms" className="btn-primary">
-            our rooms
+wycieczki
           </Link>
         </Banner>
       </Hero>

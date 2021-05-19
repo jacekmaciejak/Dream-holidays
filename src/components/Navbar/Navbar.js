@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../images/logo.svg";
+import './Navbar.css'
 import { FaAlignRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -15,27 +15,33 @@ export default class Navbar extends Component {
   render() {
     return (
       <nav className="navbar">
-        <div className="nav-center">
-          <div className="nav-header">
+        <div className="nav__center">
+          <div className="nav__header">
             <Link to="/">
-              <img src={logo} alt="Sunny Hotel" />
+              Jacek Maciejak
             </Link>
             <button
               type="button"
-              className="nav-btn"
+              className="nav__btn"
               onClick={this.handleToggle}
             >
-              <FaAlignRight className="nav-icon" />
+              <FaAlignRight className="nav__icon" />
             </button>
           </div>
           <ul
-            className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
+            className={this.state.isOpen ? "nav__links show__nav" : "nav__links"}
           >
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">Strona główna</Link>
             </li>
             <li>
-              <Link to="/">Rooms</Link>
+              <Link to="/">Wycieczki</Link>
+            </li>
+            <li>
+              <Link to="/">Blog</Link>
+            </li>
+            <li>
+              <Link to="/">Kontakt</Link>
             </li>
           </ul>
         </div>

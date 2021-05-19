@@ -1,0 +1,13 @@
+.defaultHero,
+.roomsHero {
+    min-height: calc(100vh - 66px);
+    background: url("../../images/defaultBcg.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roomsHero {
+    background-image: url("../../images/plane.jpg");
+    min-height: 60vh;
+}
