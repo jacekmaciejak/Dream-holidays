@@ -8,7 +8,6 @@ import { RoomContext } from "../context";
 export default class SingleRoom extends Component {
   constructor(props) {
     super(props);
-    //console.log(this.props);
     this.state = {
       slug: this.props.match.params.slug,
       defaultBcg
@@ -23,9 +22,9 @@ export default class SingleRoom extends Component {
     if (!room) {
       return (
         <div className="error">
-          <h3>no such room</h3>
-          <Link to="/rooms" className="btn-primary">
-            back to rooms
+          <h3>strony nie znaleziono...</h3>
+          <Link to="/" className="btn-primary">
+            strona główna
           </Link>
         </div>
       );
@@ -43,9 +42,9 @@ export default class SingleRoom extends Component {
     } = room;
     return (
       <Hero hero="roomsHero">
-        <Banner title={`${name} room `}>
+        <Banner title={`Wakacje ${name}`}>
           <Link to="/rooms" className="btn-primary">
-            back to rooms
+            strona główna
           </Link>
         </Banner>
       </Hero>

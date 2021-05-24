@@ -1,6 +1,7 @@
 import React from "react";
+import './Room.css'
 import { Link } from "react-router-dom";
-import defaultImg from "../images/room-1.jpeg";
+import defaultImg from "../../images/defaultImg.jpg";
 import PropTypes from "prop-types";
 
 export default function Room({ room }) {
@@ -8,13 +9,13 @@ export default function Room({ room }) {
   return (
     <article className="room">
       <div className="img-container">
-        <img src={images[0] || defaultImg} alt="Single room" />
+        <img src={images[0] || defaultImg} alt="Kierunek wakacji" />
         <div className="price-top">
           <h6>{price}zł</h6>
           <p>za dzień</p>
         </div>
         <Link to={`/rooms/${slug}`} className="btn-primary room-link">
-          Szczegóły
+          Więcej
         </Link>
       </div>
       <p className="room-info">{name}</p>

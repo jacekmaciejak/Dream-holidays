@@ -3,12 +3,22 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0.75rem 2rem;
+    height: 70px;
     background: var(--offWhite);
     z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.nav__center {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav__header {
+    /* margin: 0 auto; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,15 +70,14 @@
     height: 100px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 815px) {
     .nav__btn {
         display: none;
     }
 
-    .nav__center {
-        max-width: 1170px;
-        margin: 0 auto;
+    .nav__header {
         display: flex;
+        align-items: center;
         justify-content: space-between;
     }
 
