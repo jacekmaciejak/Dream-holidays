@@ -14,7 +14,7 @@ export default function Home() {
           subtitle="egzotyczne wakacje od 999 zł"
         >
           <Link to="/rooms" className="btn-primary">
-wycieczki
+            wycieczki
           </Link>
         </Banner>
       </Hero>

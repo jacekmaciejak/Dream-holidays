@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import defaultBcg from "../images/room-1.jpeg";
-import Hero from "../components/Hero/Hero";
+import defaultBcg from "../images/defaultImg.jpg";
 import Banner from "../components/Banner/Banner";
 import { Link } from "react-router-dom";
 import { RoomContext } from "../context";
+import StyledHero from "../components/StyledHero/StyledHero";
 
 export default class SingleRoom extends Component {
   constructor(props) {
@@ -31,23 +31,24 @@ export default class SingleRoom extends Component {
     }
     const {
       name,
-      description,
-      capacity,
-      size,
-      price,
-      extras,
-      breakfast,
-      pets,
+      // description,
+      // capacity,
+      // size,
+      // price,
+      // extras,
+      // breakfast,
+      // pets,
       images
     } = room;
     return (
-      <Hero hero="roomsHero">
+      <StyledHero img={images[0] || this.state.defaultBcg}>
         <Banner title={`Wakacje ${name}`}>
           <Link to="/rooms" className="btn-primary">
             strona główna
           </Link>
         </Banner>
-      </Hero>
+      </StyledHero>
+
     );
   }
 }
