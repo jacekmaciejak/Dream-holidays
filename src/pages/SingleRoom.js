@@ -31,24 +31,33 @@ export default class SingleRoom extends Component {
     }
     const {
       name,
-      // description,
-      // capacity,
-      // size,
-      // price,
-      // extras,
-      // breakfast,
-      // pets,
+      description,
+      capacity,
+      size,
+      price,
+      extras,
+      breakfast,
+      pets,
       images
     } = room;
+    const [mainImg, ...defaultImg] = images;
     return (
-      <StyledHero img={images[0] || this.state.defaultBcg}>
-        <Banner title={`Wakacje ${name}`}>
-          <Link to="/rooms" className="btn-primary">
-            strona główna
+      <>
+        <StyledHero img={mainImg || this.state.defaultBcg}>
+          <Banner title={`Wakacje ${name}`}>
+            <Link to="/rooms" className="btn-primary">
+              strona główna
           </Link>
-        </Banner>
-      </StyledHero>
-
+          </Banner>
+        </StyledHero>
+        <section className="single-room">
+          <div className="single-room-images">
+            {defaultImg.map((item, index) => (
+              <img key={index} src={item} alt={name} />
+            ))}
+          </div>
+        </section>
+      </>
     );
   }
 }
