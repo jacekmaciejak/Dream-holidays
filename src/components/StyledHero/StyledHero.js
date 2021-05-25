@@ -3,7 +3,7 @@ import defaultImg from "../../images/defaultImg.jpg";
 
 const StyledHero = styled.header`
     min-height: 60vh;
-    background: url(${props => props.img}) center/cover no-repeat;
+    background: url(${props => props.img}) bottom/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;

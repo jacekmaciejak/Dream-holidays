@@ -9,11 +9,17 @@ import img4 from "./images/room-4.jpeg";
 import img5 from "./images/room-5.jpeg";
 import img6 from "./images/room-6.jpeg";
 import img7 from "./images/room-7.jpeg";
-import img8 from "./images/room-8.jpeg";
+// import img8 from "./images/room-8.jpeg";
 import img9 from "./images/room-9.jpeg";
 import img10 from "./images/room-10.jpeg";
 import img11 from "./images/room-11.jpeg";
 import img12 from "./images/room-12.jpeg";
+import zanzibar from "./images/zanzibar.jpg";
+import sriLanka from "./images/sri_lanka.jpg";
+import malediwy from "./images/malediwy.jpg";
+import mauritius from "./images/mauritius.jpg";
+import phuket from "./images/phuket.jpg";
+import madagaskar from "./images/madagaskar.jpg";
 
 export default [
   {
@@ -444,7 +450,7 @@ export default [
         {
           fields: {
             file: {
-              url: img8
+              url: zanzibar
             }
           }
         },
@@ -672,7 +678,7 @@ export default [
         {
           fields: {
             file: {
-              url: img12
+              url: sriLanka
             }
           }
         },
@@ -729,7 +735,7 @@ export default [
         {
           fields: {
             file: {
-              url: room1
+              url: malediwy
             }
           }
         },
@@ -786,7 +792,7 @@ export default [
         {
           fields: {
             file: {
-              url: room1
+              url: mauritius
             }
           }
         },
@@ -843,7 +849,7 @@ export default [
         {
           fields: {
             file: {
-              url: room1
+              url: phuket
             }
           }
         },
@@ -900,7 +906,7 @@ export default [
         {
           fields: {
             file: {
-              url: room1
+              url: madagaskar
             }
           }
         },
