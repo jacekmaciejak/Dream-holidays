@@ -11,6 +11,7 @@
   --mainBlack: #222;
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
+  --mainBlue: rgba(89, 131, 247);
   --mainTransition: all 0.3s linear;
   --mainSpacing: 2px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
@@ -194,6 +195,11 @@ h6 {
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
+}
+
+.extras li span {
+  color: var(--mainBlue);
+  vertical-align: middle;
 }
 
 @media screen and (min-width: 992px) {

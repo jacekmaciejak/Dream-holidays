@@ -62,8 +62,7 @@
 }
 
 .room-info {
-    /* background: var(--darkGrey); */
-    background: rgba(89, 131, 247, 0.8);
+    background: var(--mainBlue);
     text-transform: capitalize;
     padding: 0.5rem 0;
     text-align: center;
