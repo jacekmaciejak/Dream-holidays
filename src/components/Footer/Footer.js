@@ -3,7 +3,6 @@ import './Footer.css';
 // import Button from '../Button/Button';
 import { Link } from 'react-router-dom';
 import { FiFacebook, FiInstagram, FiTwitter, FiLinkedin, FiYoutube } from "react-icons/fi";
-// import { ImYoutube2} from "react-icons/im";
 
 function Footer() {
     return (
@@ -27,9 +26,9 @@ function Footer() {
                     </form>
                 </div>
             </section> */}
-            <div class='footer__links'>
+            <div className='footer__links'>
                 <div className='footer__link__wrapper'>
-                    <div class='footer__link__items'>
+                    <div className='footer__link__items'>
                         <h2>O nas</h2>
                         <Link to='/kontakt'>Jak działamy?</Link>
                         <Link to='/kontakt'>Referencje</Link>
@@ -37,9 +36,9 @@ function Footer() {
                         <Link to='/kontakt'>Dla inwestora</Link>
                     </div>
 
-                    <div class='footer__icons'>
+                    <div className='footer__icons'>
                         <Link
-                            class='social__icon__link facebook'
+                            className='social__icon__link facebook'
                             to='/'
                             target='_blank'
                             aria-label='Facebook'
@@ -47,7 +46,7 @@ function Footer() {
                             <span><FiFacebook /></span>
                         </Link>
                         <Link
-                            class='social__icon__link instagram'
+                            className='social__icon__link instagram'
                             to='/'
                             target='_blank'
                             aria-label='Instagram'
@@ -55,7 +54,7 @@ function Footer() {
                             <span><FiInstagram /></span>
                         </Link>
                         <Link
-                            class='social__icon__link youtube'
+                            className='social__icon__link youtube'
                             to='/'
                             target='_blank'
                             aria-label='Youtube'
@@ -63,7 +62,7 @@ function Footer() {
                             <span><FiYoutube /></span>
                         </Link>
                         <Link
-                            class='social__icon__link twitter'
+                            className='social__icon__link twitter'
                             to='/'
                             target='_blank'
                             aria-label='Twitter'
@@ -71,7 +70,7 @@ function Footer() {
                             <span><FiTwitter /></span>
                         </Link>
                         <Link
-                            class='social__icon__link twitter'
+                            className='social__icon__link twitter'
                             to='/'
                             target='_blank'
                             aria-label='LinkedIn'
@@ -79,7 +78,7 @@ function Footer() {
                             <span><FiLinkedin /></span>
                         </Link>
                     </div>
-                    <div class='footer__link__items'>
+                    <div className='footer__link__items'>
                         <h2>Media</h2>
                         <Link to='/'>Instagram</Link>
                         <Link to='/'>Facebook</Link>

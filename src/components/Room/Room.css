@@ -23,7 +23,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(89, 131, 247, 0.8);
+    background: var(--primaryColor);
     color: var(--mainWhite);
     padding: 0.3rem 0.6rem 0.5rem;
     border-bottom-right-radius: 1rem;
@@ -65,8 +65,9 @@
 
 .room-info {
     background: var(--mainBlue);
+    color: var(--mainWhite);
     text-transform: capitalize;
-    padding: 0.5rem 0;
+    padding: 0.7rem 0;
     text-align: center;
     font-weight: 700;
     letter-spacing: var(--mainSpacing);
