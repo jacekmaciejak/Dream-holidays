@@ -41,6 +41,11 @@ function RoomsFilter({ rooms }) {
                         {people}
                     </select>
                 </div>
+                <div className="form-group">
+                    <label htmlFor="price">cena wakacji ${price}</label>
+                    <input type="range" className="form-control" name='price' min={minPrice}
+                        max={maxPrice} id='price' value={price} onChange={handleChange} />
+                </div>
             </form>
         </section>
     )
