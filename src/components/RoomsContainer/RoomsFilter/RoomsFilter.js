@@ -46,6 +46,23 @@ function RoomsFilter({ rooms }) {
                     <input type="range" className="form-control" name='price' min={minPrice}
                         max={maxPrice} id='price' value={price} onChange={handleChange} />
                 </div>
+                <div className="form-group">
+                    <label htmlFor="size">powierzchnia pokoju</label>
+                    <input type="number" className="size-input" name='minSize'
+                        id='size' value={minSize} onChange={handleChange} />
+                    <input type="number" className="size-input" name='maxSize'
+                        id='size' value={maxSize} onChange={handleChange} />
+                </div>
+                <div className="form-group">
+                    <div className="single-extra">
+                        <input type="checkbox" name='breakfast' id='breakfast' checked={breakfast} onChange={handleChange} />
+                        <label htmlFor="breakfast">breakfast</label>
+                    </div>
+                    <div className="single-extra">
+                        <input type="checkbox" name='pets' id='pets' checked={pets} onChange={handleChange} />
+                        <label htmlFor="pets">pets</label>
+                    </div>
+                </div>
             </form>
         </section>
     )
