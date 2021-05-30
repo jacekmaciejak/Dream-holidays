@@ -12,6 +12,7 @@
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
   --mainBlue: rgba(89, 131, 247);
+  --lightBlue: #e1ffff;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 2px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
@@ -86,8 +87,6 @@ h6 {
   margin: 2rem 0;
 }
 
-
-
 /* end of globals */
 
 /* single room*/
@@ -133,7 +132,7 @@ h6 {
 
 .info h3,
 .info h6 {
-  text-transform: capitalize;
+  text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
 }
 

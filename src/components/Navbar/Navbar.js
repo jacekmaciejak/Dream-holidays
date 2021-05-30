@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import './Navbar.css'
 import { FaAlignRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { GiEarthAsiaOceania } from "react-icons/gi";
 
 export default class Navbar extends Component {
   state = {
@@ -18,7 +19,7 @@ export default class Navbar extends Component {
         <div className="nav__center">
           <div className="nav__header">
             <Link to="/">
-              Jacek Maciejak
+              Jacek Maciejak<span><GiEarthAsiaOceania /></span>
             </Link>
             <button
               type="button"
@@ -38,10 +39,10 @@ export default class Navbar extends Component {
               <Link to="/rooms">Wycieczki</Link>
             </li>
             <li>
-              <Link to="/">Blog</Link>
+              <Link to="/blog">Blog</Link>
             </li>
             <li>
-              <Link to="/">Kontakt</Link>
+              <Link to="/kontakt">Kontakt</Link>
             </li>
           </ul>
         </div>

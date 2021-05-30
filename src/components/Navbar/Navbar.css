@@ -31,6 +31,11 @@
     font-size: 1.5rem;
 }
 
+.nav__header a span {
+    color: var(--mainBlue);
+    vertical-align: middle;
+}
+
 .nav__btn {
     background: transparent;
     border: none;

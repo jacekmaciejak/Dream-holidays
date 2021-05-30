@@ -8,6 +8,7 @@ class RoomProvider extends Component {
     rooms: [],
     sortedRooms: [],
     featuredRooms: [],
+    vacationSpot: [],
     loading: true,
     type: 'all',
     capacity: 1,
@@ -24,11 +25,13 @@ class RoomProvider extends Component {
   componentDidMount() {
     let rooms = this.formatData(items);
     let featuredRooms = rooms.filter(room => room.featured === true);
+    let vacationSpot = rooms.filter(room => room.country === true)
     let maxPrice = Math.max(...rooms.map(item => item.price));
     let maxSize = Math.max(...rooms.map(item => item.size));
     this.setState({
       rooms,
       featuredRooms,
+      vacationSpot,
       sortedRooms: rooms,
       loading: false,
       price: maxPrice,

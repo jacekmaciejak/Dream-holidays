@@ -1,13 +1,14 @@
 import React from "react";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
-
 import Home from "./pages/Home";
 import Error from "./pages/Error";
 import Rooms from "./pages/Rooms";
 import SingleRoom from "./pages/SingleRoom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer"
+import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/rooms" component={Rooms} />
         <Route exact path="/rooms/:slug" component={SingleRoom} />
+        <Route exact path="/blog" component={Blog} />
+        <Route exact path="/kontakt" component={Contact} />
         <Route component={Error} />
       </Switch>
       <Footer />
