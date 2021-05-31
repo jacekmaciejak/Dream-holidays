@@ -31,6 +31,7 @@
     font-size: 1.5rem;
 }
 
+
 .nav__header a span {
     color: var(--mainBlue);
     vertical-align: middle;
@@ -55,25 +56,35 @@
     list-style-type: none;
 }
 
-.nav__links a {
+.nav__links li a {
     display: block;
     text-decoration: none;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
     color: var(--mainBlack);
     transition: var(--mainTransition);
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: var(--mainSpacing);
+
+}
+
+.nav__links li a.link-active {
+    background-color: var(--mainBlue);
+    color: var(--mainWhite);
+    border-radius: 3px;
 }
 
 .nav__links a:hover {
-    color: var(--primaryColor);
+    color: var(--mainWhite);
+    background-color: var(--mainBlue);
+
 }
 
 .show__nav {
     height: 100px;
 }
+
 
 @media screen and (min-width: 815px) {
     .nav__btn {
