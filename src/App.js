@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer"
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
+import Article from "./components/Article/Article/Article";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/wycieczki" component={Rooms} />
         <Route exact path="/wycieczki/:slug" component={SingleRoom} />
-        <Route exact path="/blog" component={Blog} />
+        <Route exact path="/blog/:address" component={Article} />
         <Route exact path="/kontakt" component={Contact} />
         <Route component={Error} />
       </Switch>

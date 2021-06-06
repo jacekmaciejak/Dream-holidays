@@ -1,14 +1,10 @@
 import React from 'react'
-import Article from '../components/Article/Article'
+import ArticleContainer from '../components/Article/ArticleContainer'
 import './Blog.css'
 function Blog() {
     return (
         <section className='blog__container'>
-            <Article />
-            <Article />
-            <Article />
-            <Article />
-            <Article />
+            <ArticleContainer />
         </section>
     )
 }
