@@ -1,11 +1,15 @@
 import React from 'react'
+import Article from '../components/Article/Article'
 import './Blog.css'
 function Blog() {
     return (
-        <div className='blog-container'>
-            <h1>strona w budowie</h1>
-            <h2>blog</h2>
-        </div>
+        <section className='blog__container'>
+            <Article />
+            <Article />
+            <Article />
+            <Article />
+            <Article />
+        </section>
     )
 }
 
