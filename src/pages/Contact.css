@@ -1,8 +1,13 @@
-.contact-container {
-    width: 100%;
-    min-height: 60vh;
+.contact__wrapper {
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 850px) {
+    .contact__wrapper {
+        flex-direction: column;
+    }
 }

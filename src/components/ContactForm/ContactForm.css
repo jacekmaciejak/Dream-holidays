@@ -2,9 +2,11 @@
     width: 50%;
     padding: 40px;
     /* background-color: var(--lightBlue); */
-    border: 1px solid var(--mainBlack);
+    /* border: 1px solid var(--mainBlack); */
     margin: 50px auto;
+    background-color: var(--mainWhite);
 }
+
 
 .contact__container h2 {
     text-align: center;
@@ -67,4 +69,10 @@
 .inputBox input[type='submit']:hover {
     color: var(--mainBlack);
     transform: scale(1.3);
+}
+
+@media screen and (max-width: 850px) {
+    .contact__container {
+        width: 100%;
+    }
 }

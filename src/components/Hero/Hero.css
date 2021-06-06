@@ -11,3 +11,7 @@
     background-image: url("../../images/plane.jpg");
     min-height: 60vh;
 }
+
+.contactHero {
+    background-image: url("../../images/contact.jpg");
+}
