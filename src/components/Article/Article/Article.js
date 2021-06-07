@@ -10,7 +10,7 @@ function Article({ article }) {
             <figure className="article__image">
                 <img src={articleImage} alt="title" />
             </figure>
-            <div className="articel__info">
+            <div className="article__info">
                 <h2>{title}</h2>
                 <p>{description}</p>
             </div>

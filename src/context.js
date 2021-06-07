@@ -3,7 +3,7 @@ import items from "./data";
 import articleItems from './articles'
 
 const RoomContext = React.createContext();
-const ArticleContext = React.createContext();
+// const ArticleContext = React.createContext();
 
 class RoomProvider extends Component {
   state = {
@@ -21,6 +21,8 @@ class RoomProvider extends Component {
     maxSize: 0,
     breakfast: false,
     pets: false,
+    articles: [],
+    featuredArticles: [],
 
   };
   //getData
@@ -29,6 +31,8 @@ class RoomProvider extends Component {
     let featuredRooms = rooms.filter(room => room.featured === true);
     let vacationSpot = rooms.filter(room => room.country === true)
     let maxPrice = Math.max(...rooms.map(item => item.price));
+    let articles = this.formatArticlesData(articleItems);
+    let featuredArticles = articles.filter(article => article.featured === true)
     let maxSize = Math.max(...rooms.map(item => item.size));
     this.setState({
       rooms,
@@ -39,6 +43,8 @@ class RoomProvider extends Component {
       price: maxPrice,
       maxPrice,
       maxSize,
+      articles,
+      featuredArticles,
     });
   }
 
@@ -59,6 +65,20 @@ class RoomProvider extends Component {
     const room = tempRooms.find(room => room.slug === slug);
     return room;
   };
+
+  formatArticlesData(articleItems) {
+    let tempArticles = articleItems.map(item => {
+      let id = item.sys.id;
+      let article = { ...item.fields, id }
+      return article;
+    });
+    return tempArticles;
+  }
+  getArticle = address => {
+    let tempArticles = [...this.state.articles];
+    const article = tempArticles.find(article => article.address === address);
+    return article;
+  }
 
   handleChange = e => {
     const target = e.target;
@@ -107,7 +127,7 @@ class RoomProvider extends Component {
 
   render() {
     return (
-      <RoomContext.Provider value={{ ...this.state, getRoom: this.getRoom, handleChange: this.handleChange }}>
+      <RoomContext.Provider value={{ ...this.state, getRoom: this.getRoom, handleChange: this.handleChange, getArticle: this.getArticle }}>
         {this.props.children}
       </RoomContext.Provider>
     );
@@ -132,55 +152,58 @@ export { RoomProvider, RoomConsumer, RoomContext };
 //-----------------------------------
 //-----------------------------------
 
+// const ArticleContext = React.createContext();
 
 
-class ArticleProvider extends Component {
-  state = {
-    articles: [],
-    loading: true,
-  }
+// class ArticleProvider extends Component {
+//   state = {
+//     articles: [],
+//     featuredArticles: [],
+//     loading: true,
+//   }
 
-  //getData
-  componentDidMount() {
-    let articles = this.formatArticlesData(articleItems);
+//   //getData
+//   componentDidMount() {
+//     let articles = this.formatArticlesData(articleItems);
+//     let featuredArticles = articles.filter(article => article.featured === true)
+//     this.setState({
+//       articles,
+//       featuredArticles,
+//       loading: false,
 
-    this.setState({
-      articles,
-      loading: false,
+//     });
+//   }
 
-    });
-  }
+//   formatArticlesData(articleItems) {
+//     let tempArticles = articleItems.map(item => {
+//       let id = item.sys.id;
+//       let article = { ...item.fields, id }
+//       return article;
+//     });
+//     return tempArticles;
+//   }
+//   getArticle = address => {
+//     let tempArticles = [...this.state.articles];
+//     const article = tempArticles.find(article => article.address === address);
+//     return article;
+//   }
 
-  formatArticlesData(articleItems) {
-    let tempArticles = articleItems.map(item => {
-      let id = item.sys.id;
-      let article = { ...item.fields, id }
-      return article;
-    });
-    return tempArticles;
-  }
-  getArticle = address => {
-    let tempArticles = [...this.state.articles];
-    const article = tempArticles.find(article => article.address === address);
-    return article;
-  }
+//   render() {
+//     return (
+//       <ArticleContext.Provider value={{ ...this.state, getArticle: this.getArticle }}>
+//         {this.props.children}
+//       </ArticleContext.Provider>
+//     );
+//   }
+// }
+// const ArticleConsumer = ArticleContext.Consumer;
 
-  render() {
-    return (
-      <ArticleContext.Provider value={{ ...this.state, getArticle: this.getArticle }}>
-        {this.props.children}
-      </ArticleContext.Provider>
-    );
-  }
-}
-const ArticleConsumer = ArticleContext.Consumer;
+// export function withArticleConsumer(Component) {
+//   return function ConsumerWrapper(props) {
+//     return <ArticleConsumer>
+//       {value => <Component {...props} context={value} />}
+//     </ArticleConsumer>
+//   }
+// }
 
-export function withArticleConsumer(Component) {
-  return function ConsumerWrapper(props) {
-    return <ArticleConsumer>
-      {value => <Component {...props} context={value} />}
-    </ArticleConsumer>
-  }
-}
-
-export { ArticleProvider, ArticleConsumer, ArticleContext };
+// export { ArticleProvider, ArticleConsumer, ArticleContext };
