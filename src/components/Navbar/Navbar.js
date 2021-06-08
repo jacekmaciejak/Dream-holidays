@@ -35,7 +35,7 @@ function Navbar() {
             Jacek Maciejak<span><GiEarthAsiaOceania /></span>
           </NavLink>
           <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? <GiEarthAsiaOceania /> : <GiEarthAsiaOceania />} />
+            {/* <i className={click ? <FaAlignRight /> : <AiFillCloseCircle />} /> */}
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>

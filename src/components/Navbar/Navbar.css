@@ -1,5 +1,5 @@
 .navbar {
-    background: var(--offWhite);
+    background: var(--mainGrey);
     min-height: 80px;
     display: flex;
     justify-content: center;

@@ -19,7 +19,8 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/wycieczki" component={Rooms} />
         <Route exact path="/wycieczki/:slug" component={SingleRoom} />
-        <Route exact path="/blog" component={ArticleContainer} />
+        <Route exact path="/blog/" component={ArticleContainer} />
+        <Route exact path="/blog/:slug" component={SingleRoom} />
         <Route exact path="/kontakt" component={Contact} />
         <Route component={Error} />
       </Switch>
