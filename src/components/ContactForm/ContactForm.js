@@ -19,7 +19,7 @@ function ContactForm() {
                     <span>napisz wiadomosc</span>
                 </div>
                 <div className="inputBox">
-                    <input type="submit" name='' value='Wyślij' />
+                    <input type="submit" value='Wyślij' />
                 </div>
             </form>
         </section>

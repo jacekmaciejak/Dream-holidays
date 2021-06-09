@@ -42,7 +42,7 @@ function RoomsFilter({ rooms }) {
                     </select>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="price">cena wakacji ${price}</label>
+                    <label htmlFor="price">cena wakacji {price} zł</label>
                     <input type="range" className="form-control" name='price' min={minPrice}
                         max={maxPrice} id='price' value={price} onChange={handleChange} />
                 </div>
@@ -56,11 +56,11 @@ function RoomsFilter({ rooms }) {
                 <div className="form-group">
                     <div className="single-extra">
                         <input type="checkbox" name='breakfast' id='breakfast' checked={breakfast} onChange={handleChange} />
-                        <label htmlFor="breakfast">breakfast</label>
+                        <label htmlFor="breakfast">śniadania</label>
                     </div>
                     <div className="single-extra">
                         <input type="checkbox" name='pets' id='pets' checked={pets} onChange={handleChange} />
-                        <label htmlFor="pets">pets</label>
+                        <label htmlFor="pets">zwierzęta</label>
                     </div>
                 </div>
             </form>
