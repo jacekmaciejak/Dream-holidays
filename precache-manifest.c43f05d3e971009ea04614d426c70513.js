@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "efbb3869c80551717b810bcb35492fe2",
+    "revision": "75af0f9d2fcf3f090163564e3063fa6c",
     "url": "/dream-holidays/index.html"
   },
   {
-    "revision": "fedf5dd369f20fda9d9d",
-    "url": "/dream-holidays/static/css/main.460da337.chunk.css"
+    "revision": "3dcd4874261d59571fd5",
+    "url": "/dream-holidays/static/css/main.f1a90603.chunk.css"
   },
   {
     "revision": "be76783c4b20b20e6d3b",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dream-holidays/static/js/2.0ad44ff1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fedf5dd369f20fda9d9d",
-    "url": "/dream-holidays/static/js/main.be550107.chunk.js"
+    "revision": "3dcd4874261d59571fd5",
+    "url": "/dream-holidays/static/js/main.2266092c.chunk.js"
   },
   {
     "revision": "7e57e7ec72b007987152",

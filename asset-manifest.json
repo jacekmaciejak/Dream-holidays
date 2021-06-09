@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/dream-holidays/static/css/main.460da337.chunk.css",
-    "main.js": "/dream-holidays/static/js/main.be550107.chunk.js",
-    "main.js.map": "/dream-holidays/static/js/main.be550107.chunk.js.map",
+    "main.css": "/dream-holidays/static/css/main.f1a90603.chunk.css",
+    "main.js": "/dream-holidays/static/js/main.2266092c.chunk.js",
+    "main.js.map": "/dream-holidays/static/js/main.2266092c.chunk.js.map",
     "runtime-main.js": "/dream-holidays/static/js/runtime-main.882af8ef.js",
     "runtime-main.js.map": "/dream-holidays/static/js/runtime-main.882af8ef.js.map",
     "static/js/2.0ad44ff1.chunk.js": "/dream-holidays/static/js/2.0ad44ff1.chunk.js",
     "static/js/2.0ad44ff1.chunk.js.map": "/dream-holidays/static/js/2.0ad44ff1.chunk.js.map",
     "index.html": "/dream-holidays/index.html",
-    "precache-manifest.08953fe737fa025e4ac957e29b0d14db.js": "/dream-holidays/precache-manifest.08953fe737fa025e4ac957e29b0d14db.js",
+    "precache-manifest.c43f05d3e971009ea04614d426c70513.js": "/dream-holidays/precache-manifest.c43f05d3e971009ea04614d426c70513.js",
     "service-worker.js": "/dream-holidays/service-worker.js",
-    "static/css/main.460da337.chunk.css.map": "/dream-holidays/static/css/main.460da337.chunk.css.map",
+    "static/css/main.f1a90603.chunk.css.map": "/dream-holidays/static/css/main.f1a90603.chunk.css.map",
     "static/js/2.0ad44ff1.chunk.js.LICENSE.txt": "/dream-holidays/static/js/2.0ad44ff1.chunk.js.LICENSE.txt",
     "static/media/Hero.css": "/dream-holidays/static/media/plane.491ac1a4.jpg",
     "static/media/defaultImg.jpg": "/dream-holidays/static/media/defaultImg.8e0c64ef.jpg",
@@ -41,7 +41,7 @@
   "entrypoints": [
     "static/js/runtime-main.882af8ef.js",
     "static/js/2.0ad44ff1.chunk.js",
-    "static/css/main.460da337.chunk.css",
-    "static/js/main.be550107.chunk.js"
+    "static/css/main.f1a90603.chunk.css",
+    "static/js/main.2266092c.chunk.js"
   ]
 }
