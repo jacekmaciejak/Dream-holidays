@@ -1,1 +1,1 @@
-https://jacekmaciejak.github.io/Dream-holidays/
+https://jacekmaciejak.github.io/dream-holidays/
