@@ -1,8 +1,8 @@
-.featured-rooms {
+.destination__continer {
     padding: 5rem 0;
 }
 
-.featured-rooms-center {
+.destination__continer-center {
     width: 80vw;
     margin: 0 auto;
     display: grid;
@@ -12,14 +12,14 @@
 }
 
 @media screen and (min-width: 776px) {
-    .featured-rooms-center {
+    .destination__continer-center {
         width: 90vw;
         grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     }
 }
 
 @media screen and (min-width: 992px) {
-    .featured-rooms-center {
+    .destination__continer-center {
         width: 95vw;
         max-width: 1170px;
     }

@@ -13,9 +13,9 @@ export default class VacationDestination extends Component {
       return <Room key={room.id} room={room} />;
     });
     return (
-      <section className="featured-rooms">
+      <section className="destination__continer">
         <Title title="kierunki" />
-        <div className="featured-rooms-center">
+        <div className="destination__continer-center">
           {loading ? <Loading /> : rooms}
         </div>
       </section>

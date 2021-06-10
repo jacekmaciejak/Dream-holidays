@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Error from "./pages/Error";
 import Rooms from "./pages/Rooms";
 import SingleRoom from "./pages/SingleRoom";
+import SingleArticle from './pages/SingleArticle'
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer"
 import Contact from "./pages/Contact";
@@ -20,7 +21,7 @@ function App() {
         <Route exact path="/wycieczki" component={Rooms} />
         <Route exact path="/wycieczki/:slug" component={SingleRoom} />
         <Route exact path="/blog/" component={ArticleContainer} />
-        <Route exact path="/blog/:slug" component={SingleRoom} />
+        <Route exact path="/blog/:address" component={SingleArticle} />
         <Route exact path="/kontakt" component={Contact} />
         <Route component={Error} />
       </Switch>
