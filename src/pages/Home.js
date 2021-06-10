@@ -16,6 +16,9 @@ export default function Home() {
           <Link to="/wycieczki" className="btn-primary">
             wycieczki
           </Link>
+          <Link to="/blog" className="btn-secondary">
+            blog
+          </Link>
         </Banner>
       </Hero>
       <Services />
