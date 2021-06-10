@@ -1,5 +1,5 @@
 
-## [Live Site](https://jacekmaciejak.github.io/interior-finishes/)
+## [Live Site](https://jacekmaciejak.github.io/dream-holidays/)
 
 
 The site has been built using the following technologies:
