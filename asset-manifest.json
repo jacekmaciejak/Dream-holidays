@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/dream-holidays/static/css/main.f1a90603.chunk.css",
-    "main.js": "/dream-holidays/static/js/main.2266092c.chunk.js",
-    "main.js.map": "/dream-holidays/static/js/main.2266092c.chunk.js.map",
+    "main.css": "/dream-holidays/static/css/main.15340568.chunk.css",
+    "main.js": "/dream-holidays/static/js/main.84ceca4b.chunk.js",
+    "main.js.map": "/dream-holidays/static/js/main.84ceca4b.chunk.js.map",
     "runtime-main.js": "/dream-holidays/static/js/runtime-main.882af8ef.js",
     "runtime-main.js.map": "/dream-holidays/static/js/runtime-main.882af8ef.js.map",
-    "static/js/2.0ad44ff1.chunk.js": "/dream-holidays/static/js/2.0ad44ff1.chunk.js",
-    "static/js/2.0ad44ff1.chunk.js.map": "/dream-holidays/static/js/2.0ad44ff1.chunk.js.map",
+    "static/js/2.ffe541bc.chunk.js": "/dream-holidays/static/js/2.ffe541bc.chunk.js",
+    "static/js/2.ffe541bc.chunk.js.map": "/dream-holidays/static/js/2.ffe541bc.chunk.js.map",
     "index.html": "/dream-holidays/index.html",
-    "precache-manifest.c43f05d3e971009ea04614d426c70513.js": "/dream-holidays/precache-manifest.c43f05d3e971009ea04614d426c70513.js",
+    "precache-manifest.71f6fa10e0a2cee42cf2b68883fe143f.js": "/dream-holidays/precache-manifest.71f6fa10e0a2cee42cf2b68883fe143f.js",
     "service-worker.js": "/dream-holidays/service-worker.js",
-    "static/css/main.f1a90603.chunk.css.map": "/dream-holidays/static/css/main.f1a90603.chunk.css.map",
-    "static/js/2.0ad44ff1.chunk.js.LICENSE.txt": "/dream-holidays/static/js/2.0ad44ff1.chunk.js.LICENSE.txt",
+    "static/css/main.15340568.chunk.css.map": "/dream-holidays/static/css/main.15340568.chunk.css.map",
+    "static/js/2.ffe541bc.chunk.js.LICENSE.txt": "/dream-holidays/static/js/2.ffe541bc.chunk.js.LICENSE.txt",
     "static/media/Hero.css": "/dream-holidays/static/media/plane.491ac1a4.jpg",
     "static/media/defaultImg.jpg": "/dream-holidays/static/media/defaultImg.8e0c64ef.jpg",
     "static/media/details-1.jpeg": "/dream-holidays/static/media/details-1.33ab9f1e.jpeg",
@@ -40,8 +40,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.882af8ef.js",
-    "static/js/2.0ad44ff1.chunk.js",
-    "static/css/main.f1a90603.chunk.css",
-    "static/js/main.2266092c.chunk.js"
+    "static/js/2.ffe541bc.chunk.js",
+    "static/css/main.15340568.chunk.css",
+    "static/js/main.84ceca4b.chunk.js"
   ]
 }
