@@ -14,7 +14,7 @@ export default class VacationDestination extends Component {
     });
     return (
       <section className="destination__continer">
-        <Title title="kierunki" />
+        <Title title="najczęściej wybierane kierunki wakacji" />
         <div className="destination__continer-center">
           {loading ? <Loading /> : rooms}
         </div>

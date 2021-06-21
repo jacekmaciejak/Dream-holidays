@@ -3,7 +3,6 @@ import items from "./data";
 import articleItems from './articles'
 
 const RoomContext = React.createContext();
-// const ArticleContext = React.createContext();
 
 class RoomProvider extends Component {
   state = {

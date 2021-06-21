@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './SingleCountry.css';
 import defaultBcg from "../images/defaultImg.jpg";
 import Banner from "../components/Banner/Banner";
 import { Link } from "react-router-dom";
@@ -7,7 +8,7 @@ import StyledHero from "../components/StyledHero/StyledHero";
 import { GiEarthAsiaOceania } from "react-icons/gi";
 import VacationSpot from "../components/VacationSpot/VacationSpot";
 
-export default class SingleRoom extends Component {
+export default class SingleCountry extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,7 +17,6 @@ export default class SingleRoom extends Component {
     };
   }
   static contextType = RoomContext;
-  //componentDidMount() {}
 
   render() {
     const { getRoom } = this.context;
@@ -49,39 +49,51 @@ export default class SingleRoom extends Component {
           <Banner title={`Wakacje ${name}`}>
             <Link to="/" className="btn-primary">
               strona główna
-          </Link>
+            </Link>
           </Banner>
         </StyledHero>
-        <section className="single-room">
-          <div className="single-room-images">
+        <section className="country">
+          <div className="country__images">
             {defaultImg.map((item, index) => (
               <img key={index} src={item} alt={name} />
             ))}
           </div>
-          <div className="single-room-info">
-            <article className="desc">
+          <div className="country__info__wrapper">
+            <article className="country__desc">
               <h3>szczegóły:</h3>
               <p>{description}</p>
             </article>
-            <article className="info">
+            <article className="country__info">
               <h3>informacje:</h3>
-              <h6>cena: {price} zł</h6>
-              <h6>rozmiar: {size} m</h6>
+              <h6>cena za osobę: {price} zł / doba</h6>
+              <h6>powierzchnia plaży: {size} m</h6>
               <h6>maksymalna liczba gości: {capacity > 1 ? `${capacity} osób` : `${capacity} osób`}</h6>
               <h6>{pets ? "zapraszamy ze zwierzętami domowymi" : "zwierzęta są zabronione"}</h6>
               <h6>{breakfast && "śniadanie w cenie"}</h6>
             </article>
           </div>
         </section>
-        <section className="room-extras">
+        <section className="country__benefits">
           <h6>dodatkowo:</h6>
-          <ul className="extras">
+          <ul className="country__list">
             {extras.map((item, index) => {
               return <li key={index}><span><GiEarthAsiaOceania /></span> {item}</li>
             })}
           </ul>
         </section>
-        <VacationSpot />
+        <section className="trip__info">
+          <h3>cena zawiera</h3>
+          <ul>
+            <li><span><GiEarthAsiaOceania /></span>PRZELOTY MIĘDZYNARODOWE <p>warszawa - {name}, {name} - warszawa</p></li>
+            <li><span><GiEarthAsiaOceania /></span>PROM <p>{name} - {name}</p></li>
+            <li><span><GiEarthAsiaOceania /></span>TRANSFERY WEWNĘTRZNE <p>Wszystkie transfery wewnętrzne prywatnym samochodem z kierowcą </p></li>
+            <li><span><GiEarthAsiaOceania /></span>ZAKWATEROWANIE ZE ŚNIADANIAMI <p>6 nocy w {name}</p></li>
+            <li><span><GiEarthAsiaOceania /></span>UBEZPIECZENIE ZDROWOTNE <p>KL 40.000 EUR (obejmuje choroby przewlekłe), NNW 15.000 PLN, bagaż 2.000 PLN</p></li>
+            <li><span><GiEarthAsiaOceania /></span>ESCAPE BOX <p>Zawiera Escape Book, czyli nasz samodzielnie pisany przewodnik z dokładnymi wskazówkami dotyczącymi Waszej podróży. Dodatkowo znajdziecie tam bilety i vouchery. </p></li>
+            <li><span><GiEarthAsiaOceania /></span>OPIEKA NA MIEJSCU <p>Polski numer alarmowy czynny 24 h/dobę </p></li>
+          </ul>
+        </section>
+        {/* <VacationSpot /> */}
       </>
     );
   }

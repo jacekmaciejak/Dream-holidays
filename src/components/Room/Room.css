@@ -27,7 +27,7 @@
     color: var(--mainWhite);
     padding: 0.3rem 0.6rem 0.5rem;
     border-bottom-right-radius: 1rem;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     text-align: center;
     transition: var(--mainTransition);
 }
@@ -60,7 +60,7 @@
 }
 
 .img-container:hover .room-link {
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-65%, -50%) scale(1);
 }
 
 .room-info {
